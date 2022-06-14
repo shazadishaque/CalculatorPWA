@@ -1,2 +1,45 @@
-﻿body {
+﻿body
+{
+    margin: 0px;
+}
+
+.calculator__container 
+{
+    border: solid 1px green;
+    padding: 10px;
+    background-color: teal;
+}
+
+.calculator__display
+{
+    box-sizing: border-box;
+    font-size: 3em;
+    line-height: 2em;
+    margin-bottom: 1%;
+    width: 100%;
+    text-align: right;
+}
+
+.calculator__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calculator__button
+{
+    margin: 5px 5px 5px 5px;
+    border: 0px;
+    line-height: 3em;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.calculator__button:nth-child(4n+1)
+{
+    margin-left: 0px;
+}
+
+.calculator__button:nth-child(4n+4)
+{
+    margin-right: 0px;
 }
