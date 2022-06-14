@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorPWA", "CalculatorPWA.csproj", "{DA147E95-588B-4573-912F-FD7D2A55B891}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA147E95-588B-4573-912F-FD7D2A55B891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA147E95-588B-4573-912F-FD7D2A55B891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA147E95-588B-4573-912F-FD7D2A55B891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA147E95-588B-4573-912F-FD7D2A55B891}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {843AE46D-5E3F-4832-9EC7-0574910CD332}
+	EndGlobalSection
+EndGlobal
