@@ -1,4 +1,4 @@
-﻿class calculator
+﻿class calculatorClass
 {
     //Properties
     calculator;
@@ -25,16 +25,23 @@
         this.display = this.container.querySelector('.calculator__display');
     }
 
+    //Constructor
     constructor()
     {
         this.#getElements();
         this.#bindEventListeners();
     }
 
-    //Static methods
-    static addOperator(operator)
+    //Getters
+    get displayElement()
     {
-        const display = this.getDisplayElement();
+        return this.display;
+    }
+
+    //Instance methods
+    addOperator(operator)
+    {
+        const display = this.displayElement;
         const operators = ['/', '*', '+', '-'];
 
         if (display.value == '')
@@ -51,20 +58,15 @@
         }
     }
 
-    static getDisplayElement()
+    canAddBrackets()
     {
-        return document.querySelector('.calculator__display');
-    }
-
-    static canAddBrackets()
-    {
-        const displayValue = this.getDisplayElement().value;
+        const displayValue = this.displayElement.value;
         return displayValue && (displayValue[0] != '(' || displayValue[displayValue.length - 1] != ')')
     }
 
-    static canAddDecimal()
+    canAddDecimal()
     {
-        const displayValue = this.getDisplayElement().value;
+        const displayValue = this.displayElement.value;
 
         for (let i = displayValue.length - 1; 0 < i; i--)
         {
@@ -76,7 +78,7 @@
         return true;
     }
 
-    static removeLastCharacter(source)
+    removeLastCharacter(source)
     {
         return source.slice(0, source.length - 1);
     }
@@ -85,7 +87,7 @@
     buttonClicked(e)
     {
         const button = e.target;
-        const display = calculator.getDisplayElement();
+        const display = calculator.displayElement;
 
         switch (button.id)
         {
@@ -135,4 +137,5 @@
     }
 }
 
+const calculator = new calculatorClass();
 export default calculator;
